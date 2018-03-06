@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>binge.watch</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="logo2.png">
+
+
+
+</head>
+ 
+<body>
+
+<!-- navbar -->
+<div class="content content-inside">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img id="logo" src="logo.png" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="hvr-grow-shadow">HOME</a></li>
+        <li><a href="#" class="hvr-grow-shadow">GENRE</a></li>
+        <li><a href="#" class="hvr-grow-shadow">COUNTRY</a></li>
+        <li><a href="#" class="hvr-grow-shadow">TV SERIES</a></li>
+        <li><a href="#" class="hvr-grow-shadow">TOP IMDb</a></li>
+        <li><a href="#" class="hvr-grow-shadow">A-Z LIST</a></li>
+        <li><a href="#" class="hvr-grow-shadow">NEWS</a></li>
+        <li><a href="#" class="hvr-grow-shadow">REQUEST</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="hvr-grow-shadow"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#" class="hvr-grow-shadow"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar -->
+
+<!-- Carousel -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="cars.jpg" alt="Cars" width="1920" height="1080">
+        <div class="carousel-caption">
+          <h3>Cars</h3>
+          <p>Life is a journey. Enjoy the trip.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="insideout.jpg" alt="Inside Out" width="1920" height="1080">
+        <div class="carousel-caption">
+          <h3>Inside Out</h3>
+          <p>Meet the little voices inside your head. A Major Emotion Picture.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="zootopia.jpg" alt="Zootopia" width="1920" height="1080">
+        <div class="carousel-caption">
+          <h3>Zootopia</h3>
+          <p>Welcome to the urban jungle.</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+ <!-- Wrapper for slides -->
+ <!-- Carousel -->
+
+<!-- counter -->
+
+<div class="socialmedia">
+  <div id="socialmedia" class="row">
+    <div class="col-xs-12 col-sm-2 col-lg-1"> <!-- twitter -->
+       <a href=<a href="https://twitter.com/intent/tweet?button_hashtag=twitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></a>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-12 col-sm-4 col-lg-2"><!-- FB Share -->
+       <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+
+       <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=124&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="124" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+    </div>
+
+    <div id="likeus" class="col-xs-12 col-sm-6 text-md-left col-lg-4 text-lg-left">
+      <p>Like and Share our page to support us</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- tabs -->
+<div class="container-fluid">
+  <ul class="nav nav-pills">
+    <li><a data-toggle="pill" href="#featured">Featured</a></li>
+    <li><a data-toggle="pill" href="#topviewed">Top viewed today</a></li>
+    <li><a data-toggle="pill" href="#mostfavorite">Most Favorite</a></li>
+    <li><a data-toggle="pill" href="#toprating">Top Rating</a></li>
+    <li><a data-toggle="pill" href="#topimdb">Top IMDb</a></li>
+  </ul>
+    <!-- tabs -->
+
+    <!-- tab content -->
+  <div class="tab-content">
+    <div id="featured" class="tab-pane fade in active">
+
+      <h6><div class="row text-center topviewed"><!-- start of row -->
+
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"></center><sub>Hostiles</sub></a>
+            <div class="star">
+            <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+            </fieldset>
+            </div>star
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><button class="text">WATCH</button></a>
+            </div>
+          </div><!-- thumbnails -->
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="https://www.imdb.com/title/tt1825683/videoplayer/vi2046343193"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Black Panther" class="image" height="280 px" width="auto"><sub>Black Panther</sub></a>
+            <div class="overlay">
+               <a href="https://www.imdb.com/title/tt1825683/videoplayer/vi2046343193"> <button class="text">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="https://www.imdb.com/title/tt4477536/videoplayer/vi2967320601"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BODI2ZmM5MzMtOWZiMC00ZGE3LTk3MWEtY2U0ZjE3ZWJlNDEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,668,1000_AL_.jpg" alt="Fifty Shades Freed" class="image" height="280 px" width="auto"><sub>Fifty Shades Freed</sub></a>
+            <div class="overlay">
+               <a href="https://www.imdb.com/title/tt4477536/videoplayer/vi2967320601"><button class="text btn">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="https://www.imdb.com/title/tt4500922/videoplayer/vi1922152473"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyNzk3MDc2NF5BMl5BanBnXkFtZTgwMDk3OTM1NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Maze Runner: The Death Cure" class="image" height="280 px" width="auto"><sub>Maze Runner: The Death Cure</sub></a>
+            <div class="overlay">
+               <a href="https://www.imdb.com/title/tt4500922/videoplayer/vi1922152473"> <button class="text btn btn-suceess">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-success">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+          </div>
+          </div>
+        </div><!-- end of column -->
+
+      </h6><!-- end of row -->
+
+    </div><!-- end of Featured -->
+
+    <div id="topviewed" class="tab-pane fade">
+      <h6><div class="row text-center topviewed"><!-- start of row -->
+        
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+
+      </h6><!-- end of row -->
+    </div>
+    <div id="mostfavorite" class="tab-pane fade">
+      <h6><div class="row text-center topviewed"><!-- start of row -->
+        
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+
+      </h6><!-- end of row -->
+    </div>
+    <div id="toprating" class="tab-pane fade">
+      <h6><div class="row text-center topviewed"><!-- start of row -->
+        
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+
+      </h6><!-- end of row -->
+    </div>
+    <div id="topimdb" class="tab-pane fade">
+      <h6><div class="row text-center topviewed"><!-- start of row -->
+        
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+        <div class="col-lg-2 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-warning">WATCH</button></a>
+            </div>
+          </div>
+        </div><!-- end of column -->
+
+      </h6><!-- end of row -->
+    </div>
+  </div><!-- End tab content -->
+</div><!-- end of tab -->
+<!-- tab content -->
+</div> <!-- content -->
+
+
+<!--footer-->
+<footer class="footer1">
+  <div class="container">
+    <div class="row"><!-- row -->
+      <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+        <ul class="list-unstyled clear-margins"><!-- widgets -->
+           <li class="widget-container widget_nav_menu"><!-- widgets list -->
+              <h1 class="title-widget">Account</h1>
+                <ul>
+                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> My Account</a></li>
+                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Renewal</a></li>
+                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Create Account</a></li>
+                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Pricing</a></li>
+                </ul>
+            </li><!-- widget list end -->
+        </ul><!-- widget end -->
+      </div><!-- widgets column left end -->
+      <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+        <ul class="list-unstyled clear-margins"><!-- widgets -->
+          <li class="widget-container widget_nav_menu"><!-- widgets list -->
+            <h1 class="title-widget">Let us help you</h1>
+              <ul>
+                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Report Abuse</a></li>
+                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Contact us</a></li>
+                <li><a  href="#"><i class="fa fa-angle-double-right"></i>  FAQ</a></li>
+              </ul>
+          </li><!-- end widget list -->
+        </ul><!-- end widgets -->
+      </div><!-- widgets column left end -->
+      <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+        <ul class="list-unstyled clear-margins"><!-- widgets -->
+          <li class="widget-container widget_nav_menu"><!-- widgets list -->
+            <h1 class="title-widget">Useful links</h1>
+              <ul>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Top IMDb</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> News</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Genre</a></li>
+              </ul>
+          </li><!-- end widget list -->
+        </ul><!-- end widgets -->
+      </div><!-- widgets column left end -->
+        <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+          <ul class="list-unstyled clear-margins"><!-- widgets -->
+            <li class="widget-container widget_recent_news"><!-- widgets list -->
+              <h1 class="title-widget">Contact Detail </h1>
+                <div class="footerp"> 
+                  <h2 class="title-median">Binge Watch</h2>
+                    <p><b>Email id:</b> <a href="mailto:info@bingewatch.com">info@bingewatch.com</a></p>
+                    <p><b>Helpline Numbers </b>
+                        <b style="color:#ffc106;">(8AM to 10PM):</b>  +63-8130890090, +63-8130190010</p>
+                    <p><b>Corp Office / Postal Address</b></p>
+                    <p><b>Phone Numbers : </b>7042827160, </p>
+                    <p> 063-27568832, 9868387223</p>
+                </div><!-- end footerp -->
+                <div class="social-icons">
+                  <ul class="nomargin">
+                    <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+                    <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                  </ul><!-- end nomargin -->
+                </div><!-- end social icons -->
+            </li><!-- end widget list -->
+          </ul><!-- end widgets -->
+        </div><!-- end widgets column center -->
+    </div><!-- end row -->
+  </div><!-- end continer -->
+</footer>
+<!-- end footer -->
+
+<!-- footer bottom -->
+
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="copyright">
+
+          © 2018, Binge Watch, All rights reserved
+
+        </div><!-- end copyright -->
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div><!-- end footer bottom -->
+
+
+
+<!-- jQuery Bootstrap plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- tabs -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- google+ -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- include all compiled plugins -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a9b82fe794a262d"></script>
+
+</body>
+
+
+</html>
