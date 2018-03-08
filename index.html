@@ -9,12 +9,13 @@
 	<title>binge.watch</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link href="css/hover-min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="logo2.png">
-
-
 
 </head>
  
@@ -32,20 +33,20 @@
       </button>
       <a class="navbar-brand" href="#"><img id="logo" src="logo.png" alt="logo"></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse header" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#" class="hvr-grow-shadow">HOME</a></li>
-        <li><a href="#" class="hvr-grow-shadow">GENRE</a></li>
-        <li><a href="#" class="hvr-grow-shadow">COUNTRY</a></li>
-        <li><a href="#" class="hvr-grow-shadow">TV SERIES</a></li>
-        <li><a href="#" class="hvr-grow-shadow">TOP IMDb</a></li>
-        <li><a href="#" class="hvr-grow-shadow">A-Z LIST</a></li>
-        <li><a href="#" class="hvr-grow-shadow">NEWS</a></li>
-        <li><a href="#" class="hvr-grow-shadow">REQUEST</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">HOME</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">GENRE</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">COUNTRY</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">TV SERIES</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">TOP IMDb</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">A-Z LIST</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">NEWS</a></li>
+        <li><a href="#" class="hvr-grow-shadow header">REQUEST</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="hvr-grow-shadow"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#" class="hvr-grow-shadow"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#" class="hvr-grow-shadow header"><span class="glyphicon glyphicon-user header"></span> Sign Up</a></li>
+        <li><a href="#" class="hvr-grow-shadow header"><span class="glyphicon glyphicon-log-in header"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -108,16 +109,17 @@
 
 
 <!-- tabs -->
-<div class="container container-fluid">
+
+
+<div class="container-fluid">
   <div class="row">
-  <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-  <ul class="nav nav-pills">
-    <li><a data-toggle="pill" href="#featured">Featured</a></li>
-    <li><a data-toggle="pill" href="#topviewed">Top viewed today</a></li>
-    <li><a data-toggle="pill" href="#mostfavorite">Most Favorite</a></li>
-    <li><a data-toggle="pill" href="#toprating">Top Rating</a></li>
-    <li><a data-toggle="pill" href="#topimdb">Top IMDb</a></li>
-  </ul>
+    <ul class="nav nav-pills tab">
+      <li><a class="tab" data-toggle="pill" href="#featured">Featured</a></li>
+      <li><a class="tab" data-toggle="pill" href="#topviewed">Top viewed today</a></li>
+      <li><a class="tab" data-toggle="pill" href="#mostfavorite">Most Favorite</a></li>
+      <li><a class="tab" data-toggle="pill" href="#toprating">Top Rating</a></li>
+      <li><a class="tab" data-toggle="pill" href="#topimdb">Top IMDb</a></li>
+    </ul>
   </div>
   </div>
     <!-- tabs -->
@@ -128,11 +130,13 @@
 
       <h6><div class="row text-center topviewed"><!-- start of row -->
 
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
-            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"></center><sub>Hostiles</sub></a>
-            <!-- <div class="star">
-            <fieldset class="rating">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+               <!-- star -->
+               <!-- <div class="star"> -->
+               <form action="" style="text-align: center;">
+               <fieldset class="rating">
                 <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                 <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
                 <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
@@ -143,52 +147,142 @@
                 <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
                 <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
                 <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
-            </div> --><!-- star -->
+                </fieldset>
+                </center><sub>Hostiles</sub></a>
+                <!-- </div> -->
+              <!-- STAR -->
+            <div class="overlay">
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><span class="glyphicon glyphicon-play-circle"></span></a>
+            </div>
+          </div><!-- thumbnails -->
+        </div><!-- end of column -->
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+          <div class="thumbnails">
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+              <!-- star -->
+              <div class="stars">
+                <form style="text-align: center;"  action="">
+                  <input class="star star-5" id="star-5" type="radio" name="star"/>
+                  <label class="star star-5" for="star-5"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star"/>
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star"/>
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star"/>
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-1" id="star-1" type="radio" name="star"/>
+                  <label class="star star-1" for="star-1"></label>
+                </form>
+              </div>
+              <!-- STAR -->
+              </center><sub>Hostiles</sub></a>
             <div class="overlay">
                <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"></a>
             </div>
           </div><!-- thumbnails -->
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
-            <a href="https://www.imdb.com/title/tt1825683/videoplayer/vi2046343193"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Black Panther" class="image" height="280 px" width="auto"><sub>Black Panther</sub></a>
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+              <!-- star -->
+              <div class="stars">
+                <form action="">
+                  <input class="star star-5" id="star-5" type="radio" name="star"/>
+                  <label class="star star-5" for="star-5"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star"/>
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star"/>
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star"/>
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-1" id="star-1" type="radio" name="star"/>
+                  <label class="star star-1" for="star-1"></label>
+                </form>
+              </div>
+              <!-- STAR -->
+              </center><sub>Hostiles</sub></a>
             <div class="overlay">
-               <a href="https://www.imdb.com/title/tt1825683/videoplayer/vi2046343193"> <button class="text">WATCH</button></a>
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"></a>
             </div>
-          </div>
+          </div><!-- thumbnails -->
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
-            <a href="https://www.imdb.com/title/tt4477536/videoplayer/vi2967320601"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BODI2ZmM5MzMtOWZiMC00ZGE3LTk3MWEtY2U0ZjE3ZWJlNDEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,668,1000_AL_.jpg" alt="Fifty Shades Freed" class="image" height="280 px" width="auto"><sub>Fifty Shades Freed</sub></a>
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+              <!-- star -->
+               <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+              <!-- STAR -->
+              </center><sub>Hostiles</sub></a>
             <div class="overlay">
-               <a href="https://www.imdb.com/title/tt4477536/videoplayer/vi2967320601"><button class="text btn">WATCH</button></a>
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"></a>
             </div>
-          </div>
+          </div><!-- thumbnails -->
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
-            <a href="https://www.imdb.com/title/tt4500922/videoplayer/vi1922152473"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyNzk3MDc2NF5BMl5BanBnXkFtZTgwMDk3OTM1NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="Maze Runner: The Death Cure" class="image" height="280 px" width="auto"><sub>Maze Runner: The Death Cure</sub></a>
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+              <!-- star -->
+              <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+              </fieldset>
+              <!-- STAR -->
+              </center><sub>Hostiles</sub></a>
             <div class="overlay">
-               <a href="https://www.imdb.com/title/tt4500922/videoplayer/vi1922152473"> <button class="text btn btn-suceess">WATCH</button></a>
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"></a>
             </div>
-          </div>
+          </div><!-- thumbnails -->
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
-            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
+            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><center><img class="image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto">
+              <!-- star -->
+              <!-- <div class="stars"> -->
+                <fieldset class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+              <!-- </div> -->
+              <!-- STAR -->
+              </center><sub>Hostiles</sub></a>
             <div class="overlay">
-               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"> <button class="text btn btn-success">WATCH</button></a>
+               <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"></a>
             </div>
-          </div>
+          </div><!-- thumbnails -->
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
-          <div class="thumbnails">
-            <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
-            <div class="overlay">
-          </div>
-          </div>
-        </div><!-- end of column -->
+
 
       </h6><!-- end of row -->
 
@@ -197,7 +291,7 @@
     <div id="topviewed" class="tab-pane fade">
       <h6><div class="row text-center topviewed"><!-- start of row -->
         
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -205,7 +299,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -213,7 +307,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -221,7 +315,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -229,7 +323,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -237,7 +331,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -251,7 +345,7 @@
     <div id="mostfavorite" class="tab-pane fade">
       <h6><div class="row text-center topviewed"><!-- start of row -->
         
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -259,7 +353,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -267,7 +361,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -275,7 +369,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -283,7 +377,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -291,7 +385,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -305,7 +399,7 @@
     <div id="toprating" class="tab-pane fade">
       <h6><div class="row text-center topviewed"><!-- start of row -->
         
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -313,7 +407,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -321,7 +415,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -329,7 +423,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -337,7 +431,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -345,7 +439,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -359,7 +453,7 @@
     <div id="topimdb" class="tab-pane fade">
       <h6><div class="row text-center topviewed"><!-- start of row -->
         
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -367,7 +461,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -375,7 +469,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -383,7 +477,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -391,7 +485,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -399,7 +493,7 @@
             </div>
           </div>
         </div><!-- end of column -->
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 containerimg"><!-- STart of column -->
           <div class="thumbnails">
             <a href="http://www.imdb.com/title/tt5478478/videoplayer/vi3455891481"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Hostiles" class="image" height="280 px" width="auto"><sub>Hostiles</sub></a>
             <div class="overlay">
@@ -527,6 +621,13 @@
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a9b82fe794a262d"></script>
+
+<!-- Star -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/star-rating.js" type="text/javascript"></script>
+<script>var runOnLoad=function(c,o,d,e){function x(){for(e=1;c.length;)c.shift()()}o[d]?(document[d]('DOMContentLoaded',x,0),o[d]('load',x,0)):o.attachEvent('onload',x);return function(t){e?o.setTimeout(t,0):c.push(t)}}([],window,'addEventListener');</script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Patua+One%7COpen+Sans:400,400italic" type="text/css">
+    <link rel="stylesheet" href="/stylesheet/" type="text/css">
 
 </body>
 

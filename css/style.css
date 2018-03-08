@@ -11,13 +11,27 @@ body {
 
 /*navbar*/
 #logo {
-	vertical-align: middle;
+	margin-top: -15px;
+  vertical-align: middle;
 	border-style: none;
 	background-size: cover;
 	background-position: 50% 25%;
 	height: 70px;
 	width: auto;
 	display: inline-block;
+  padding: 5px;
+}
+
+.glyphicon {
+  padding: 5px;
+}
+
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  /*font-weight: bold;*/
+  color: #FFC000 !important;
+  padding: 5px;
 }
 
 .navbar {
@@ -84,6 +98,14 @@ body {
 
 
 /*tabs*/
+
+
+.tab {
+  color: orange !important;
+  background-color: #
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
 .nav-pills {
     margin-top: 20px !important; /*margin for the suggestion to go to left*/
 }
@@ -155,34 +177,42 @@ sub {
 
 /*overlay end*/
 
-/*rating*/
+/*STAR*/
+
+
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-fieldset, label { margin: 0; padding: 0; }
-body{ margin: 20px; }
-h1 { font-size: 1.5em; margin: 10px; }
+fieldset, label { 
+  margin: 0; 
+  padding: 0; 
+  text-align: center !important;
+}
+
+body{ margin: 
+  20px; 
+}
+h1 { font-size: 1.5em; margin: 10px;}
 
 /****** Style Star Rating Widget *****/
 
 .rating { 
   border: none;
   float: left;
-  text-align: center;
+  text-align: center !important;
 }
 
-.star {
-    text-align: center;
-    display: inline-block; /*center stars*/
+.rating > input { 
+  display: none; 
+} 
 
-}
-
-.rating > input { display: none; } 
 .rating > label:before { 
-  margin: 5px;
+  margin: 3px;
   font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";
+  text-align: center;
 }
 
 .rating > .half:before { 
@@ -205,11 +235,6 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
-.rating {
-  text-align: center !important;
-  align-items: center;
-}
 
 /*Signin*/
 
@@ -325,8 +350,6 @@ text-align: center;
 .card {
     word-wrap: break-word;
 }
-
-
 
 /*footer*/
 /*sticky*/
@@ -480,41 +503,113 @@ text-align: center;
 
 /*@media query*/
 
- /* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-} 
 
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
 
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
+/*sony experia*/
+@media (min-width: 1080px) and (max-width: 1920px) {
+  
+  //CSS
+  
+}
+
+/*Amazon Kindle*/
+@media (min-width: 1280px) and (max-width: 800px) {
+  
+  //CSS
+  
+}
+/*navbar collapse*/
+@media (min-width: 1280px) and (max-width: 800px) {
+   .collapse {
+       display: none !important;
+   }
+}
+
+/*@media (min-width: 540px) and (max-width: 960px) {
+   .star {
+      display: none !important;
+   }
+}*/
+
+/*@media (min-width: 1080px) and (max-width: 1920px) {
+   .star {
+      display: none !important;
+   }
+}*/
+
+@media (min-width: 480px) and (max-width: 854px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
 
