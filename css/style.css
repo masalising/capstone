@@ -254,7 +254,7 @@ text-align: center;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: auto;
-    padding: 1.25rem;
+        padding: 1.25rem;
         padding-top: 1.25rem;
         padding-right: 1.25rem;
         padding-bottom: 1.25rem;
@@ -343,6 +343,10 @@ text-align: center;
 /*sticky*/
 .content {
   min-height: 310%;
+}
+
+.news {
+  min-height: 100%;
 }
 
 .content-signin {
@@ -584,13 +588,13 @@ text-align: center;
 }
 /*navbar collapse*/
 @media (min-width: 1280px) and (max-width: 800px) {
-   .collapse {
+   .collapse .news {
        display: none !important;
    }
 }
 
 @media (min-width: 540px) and (max-width: 960px) {
-   .star {
+   .star .news {
       display: none !important;
    }
 }
@@ -608,6 +612,16 @@ text-align: center;
 }
 
 @media (min-width: 720px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+  h6 {
+    font-size: 5px;
+  }
   
   //CSS
   
